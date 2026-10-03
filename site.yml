@@ -1,0 +1,17 @@
+- name: API Staging
+  hosts: api
+  become: yes
+  roles:
+    - api
+
+- name: Payments Staging
+  hosts: payments
+  become: yes
+  roles:
+    - payments
+
+- name: Logs Staging
+  hosts: logs
+  become: yes
+  roles:
+    - logs
